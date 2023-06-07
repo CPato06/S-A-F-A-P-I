@@ -1,6 +1,6 @@
 <?php
 
-    $servidor = "database-api.cdjnyiihv9g0.us-east-2.rds.amazonaws.com";
+    $servidor = "10.20.3.179";
     $usuario = "admin";
   	$contrasena = "Adminpato";
   	$dbnombre = "tienda";
