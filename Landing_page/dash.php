@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
-  <head><script src="assets/js/color-modes.js"></script>
+  <head>
+    <script src="assets/js/color-modes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,6 +16,12 @@
     <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
+      h1{
+        color: #0091FF;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 25px;
+        margin-left: 20px;
+      }
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -76,6 +84,27 @@
       .bd-mode-toggle {
         z-index: 1500;
       }
+      .grafica_container{
+        text-align: center;
+      }
+      .mini_img{
+        width: 30px;
+        height: 30px;
+      }
+      .esp_tab{
+        width: 50px;
+      }
+      th, td {
+        padding: 8px;
+        text-align: left;
+        border-radius: 8px;
+    }
+    .graf_compl{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
     </style>
 
 <!-- Custom styles for this template -->
@@ -187,7 +216,7 @@
         </a>
       </li>
       <hr>
-      <a>Operacio financiera</a>
+      <a>Operacion financiera</a>
       <li>
         <a href="comp.php" class="nav-link text-white">
           <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
@@ -236,16 +265,72 @@
       <a style="font-weight: 500; font-size: 20px; margin-left: 5%;">Dashboard</a>
       </div>
     <h2 style="margin-left: 3%; margin-top: 3%;"></h2>
+    <h1>Panel de gestion de fraude</h1>
     <hr style="width: 100%; margin-left: 3%;">
     <div style="margin-left: 3%;">
+    <div>
+      <table style="width: 150%; height: 15%; max-width: 1200px;">
+        <tr style="width: 150%;"> <!--Columna-->
+        <?php $labels = ["Enviadas", "Aprovadas", "En analisis"];
+              $data = [10, 15, 5];
+              $colores = ["#F8CF3D", "#67DD3E", "#61D0FF"]; ?>
+
+          <th style="background-color: #F8CF3D;" ><img src="images/enviadas.png" class="mini_img"> Enviadas<br><?php echo $data[0]; ?></th><!--renglon-->
+          <th class="esp_tab"></th>
+          <th style="background-color: #67DD3E;"><img src="images/aprovadas.png" class="mini_img"> Aprobadas<br><?php echo $data[1]; ?></th>
+          <th class="esp_tab"></th>
+          <th style="background-color: #61D0FF;"><img src="images/enviadas.png" class="mini_img"> En analisis<br><?php echo $data[2]; ?></th>
+        </tr>
+      </table>
+    </div>
+    <div class="graf_compl">
+      <div class="grafica_container col-5">
+          <tr>
+            <th>
+              <h2>Numero de transacciones</h2>
+            </th>
+          </tr>
+          <tr>
+            <td>
+              <p>Incluye aprobadas y rechazadas</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Mes actual: </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Mes anterior: </p>
+            </td>
+          </tr>
+      </div>
+        <div class="col-6">
+          <canvas id="grafica"></canvas>
+        </div>
+</div>
     
-
-     
-
+    <script>
+    // Crear la gráfica de pastel con los datos
+    var ctx = document.getElementById('grafica').getContext('2d');
+    var grafica = new Chart(ctx, {
+        type: 'pie',
+        data: {
+            labels: <?php echo json_encode($labels); ?>,
+            datasets: [{
+                data: <?php echo json_encode($data); ?>,
+                backgroundColor: <?php echo json_encode($colores); ?>
+            }]
+        },
+        options: {
+            responsive: true
+        }
+    });
+    </script>
+    
     </div>
   </div>
-
-
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 
       <script src="js/sidebars.js"></script>

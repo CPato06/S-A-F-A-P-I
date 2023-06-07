@@ -9,6 +9,9 @@
         </head>
      
     <body>
+        <?php
+        include('conexion.php');
+        ?>
     <iframe src="log.php"></iframe>
         <div>    
             <h1><a href="landing_page.php" class="titulo">ShieldVerify API</a></h1>

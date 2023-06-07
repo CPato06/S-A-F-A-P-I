@@ -13,6 +13,9 @@
             <h1><a href="landing_page.php" class="titulo">ShieldVerify API</a></h1>
             <hr>
         </div>
+        <?php
+        include('conexion.php');
+        ?>
 
             <section class="form-registro">
                 <h2 style="color: black; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,

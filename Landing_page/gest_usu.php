@@ -79,6 +79,9 @@
     </style>
 
 <!-- Custom styles for this template -->
+<?php
+include('conexion.php');
+?>
 <link href="sidebars.css" rel="stylesheet">
   </head>
   <body>
