@@ -93,10 +93,10 @@
             <a class="nav-link" href="/">Inicio <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="Autos">Autos</a>
+            <a class="nav-link" href="Autos.php">Autos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="Contactanos">Contacto</a>
+            <a class="nav-link" href="Contactanos.php">Contacto</a>
           </li>
         </ul>
       </div>

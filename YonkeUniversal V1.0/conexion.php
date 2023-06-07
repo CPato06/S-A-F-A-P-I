@@ -1,9 +1,9 @@
 <?php
 
-    $servidor = "localhost";
-    $usuario = "u718113309_yonkeuniversal";
-  	$contrasena = "TcQKZFI?mU2#";
-  	$dbnombre = "u718113309_yonkedb";
+    $servidor = "database-api.cdjnyiihv9g0.us-east-2.rds.amazonaws.com";
+    $usuario = "admin";
+  	$contrasena = "Adminpato";
+  	$dbnombre = "tienda";
 
 	$conexion = new mysqli($servidor, $usuario, $contrasena, $dbnombre);
       if($conexion->connect_error){
