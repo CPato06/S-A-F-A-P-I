@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prueba paypal</title>
 
-    <script src="https://www.paypal.com/sdk/js?client-id=
-    AWyby8nug-_ooLok9VV73na-OSoPuayMUU5OXba-tOU0CHPXY-2_NyJvEgsiUNGIwTa8AwENJ-YvfWTs&
-    currency=MXN"></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=AWyby8nug-_ooLok9VV73na-OSoPuayMUU5OXba-tOU0CHPXY-2_NyJvEgsiUNGIwTa8AwENJ-YvfWTs&currency=MXN"></script>
 </head>
 <body>
     
