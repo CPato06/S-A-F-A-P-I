@@ -1,0 +1,728 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,700');
+
+@font-face{   
+    font-family:"Lemon Milk Light";
+    src: url("../fuentes/LemonMilk/LEMONMILK-Light.otf");
+}
+@font-face{   
+    font-family:"Lemon Milk Medium";
+    src: url("../fuentes/LemonMilk/LEMONMILK-Medium.otf");
+}
+ @font-face{   
+    font-family:"Comfortaa Bold";
+    src: url("../fuentes/Comfortaa/Comfortaa-Bold.ttf");
+}
+
+*{   
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+    box-sizing:border-box;  
+}
+body {
+    background-color: #F0F0F0;
+}
+body::-webkit-scrollbar {
+    width: 7px;
+    background-color: rgba(0,0,0,.9);
+}
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(255,255,255,.17);
+    border-radius: 10px;
+    border-right: 2px solid rgba(255,255,255,.0);   
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:20px;
+	right:17px;
+	background-color:#00CF6A;
+	color:#FFF;
+	border-radius:50%;
+	text-align:center;
+    font-size:190%;
+	box-shadow: 2px 2px 3px #252525;
+    z-index:2000;
+}
+.float:hover {
+	text-decoration: none;
+	color: #00CF6A;
+    background-color:#fff;
+    transition: all .25s;
+}
+
+.my-float{
+	margin-top:25%;
+}
+
+/* Boton ir arrriba */
+.buttonUp-contenedor {
+    width: 55px;
+    height: 55px;
+    background: #343434;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    cursor: pointer;
+    border: 4px solid transparent;
+    transition: all .3s ease;
+    transform: scale(0);
+}
+.buttonUp-contenedor:hover {
+    transform: scale(1.1);
+    border-color: rgba(0,0,0,0.1);
+}
+
+@media (max-width:770px) {
+    .float{
+        width: 50px;
+        height: 50px;
+        bottom: 10px;
+        right: 10px;
+        font-size: 160%;
+    }
+    .buttonUp-contenedor {
+        width: 45px;
+        height: 45px;
+        bottom: 70px;
+        right: 10px;
+        font-size: 90%;
+    }
+}
+
+/*============MENU==============*/
+.header {
+    background-color: #151515;
+}
+.contHeader{
+    padding: 1% 2%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: auto;
+    align-items: center;
+}
+.informacion{
+    display: flex;
+    justify-content: space-between;
+}
+.informacion i {
+    color: #EC3C3C;
+    font-size: 180%;
+    padding-right: 7%;
+}
+.columnaDir, .columnaHorario, .columnaTel {
+    align-items: center;
+    display: flex;
+    padding: 2%;
+}
+.columnaDir {
+    min-width: 300px;
+}
+.columnaHorario {
+    min-width: 260px;
+}
+.columnaTel {
+    min-width: 180px;
+}
+
+.columnaDir p, .columnaHorario p, .columnaTel p {
+    font-family:"Comfortaa Bold";
+    font-weight: 600;
+    font-size: 80%;
+    color: white;
+    margin-bottom: 0%;
+}
+
+.logoPrincipal {
+    width: 50%;
+}
+.navbar {
+    box-shadow: 0px -5px 13px 1px rgba(0,0,0,0.42);
+}
+
+.navbar-dark .navbar-nav .nav-item.active .nav-link, .navbar-dark .navbar-nav .nav-item.active:hover .nav-link{
+    color: #EC3C3C;
+}
+.navbar-dark .navbar-nav .nav-item .nav-link{
+    font-family: 'Comfortaa Bold', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+}
+.navbar-dark{
+    padding: 1% !important;
+    background-color: #252525;
+}
+.nav-item {
+    padding: 0 4%;
+}
+.navbar-dark .navbar-nav .nav-item:hover, .navbar-dark .navbar-nav .nav-item:hover .nav-link{
+    color: #EC3C3C;
+}
+.navbar-toggler{
+    color:white !important;
+    border-color: rgba(255,255,255,0) !important;
+}
+.navbar-toggler:hover{
+    cursor: pointer;
+    color:white !important;
+}
+.dropdown-menu {
+    background-color: #252525 !important;
+    top: 115% !important;
+}
+.dropdown-item {
+    font-family: 'Comfortaa Bold', sans-serif;
+    text-transform: uppercase;
+    color: white !important;
+    font-size: 90%;
+}
+.dropdown-item:hover {
+    background-color: rgba(0,0,0,.0) !important;
+    color: #EC3C3C !important;
+}
+
+@media (max-width: 1024px) {
+    .informacion i {
+        font-size: 150%;
+        padding-right: 7%;
+    }
+    .columnaDir p, .columnaHorario p, .columnaTel p {
+        font-size: 50%;
+    }
+    .columnaDir {
+        min-width: 200px;
+    }
+    .columnaHorario {
+        min-width: 180px;
+    }
+    .columnaTel {
+        min-width: 120px;
+    }
+    .logoPrincipal {
+        width: 50%;
+    }
+}
+@media (max-width: 770px) {
+    .informacion{
+        display: none;
+    }
+    .logoPrincipal {
+        width: 20%;
+    }
+    .navbar-dark .navbar-nav .nav-item .nav-link, .navbar-dark .navbar-nav .nav-item.active .nav-link{
+        font-size: 80%;
+    }
+}
+@media (max-width: 550px) {
+    .logoPrincipal {
+        width: 25%;
+    }
+    
+}
+
+/*============SLIDER==============*/
+.carousel-item{
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.carousel-caption{
+    margin-bottom: 13%;
+    padding: 0% 12%;
+}
+.carousel-caption h5{
+    font-size: 350%;
+    border-bottom: 5px solid #F40F0F;
+    font-family: 'Lemon Milk Medium', sans-serif;
+    margin-bottom: 2% !important;
+}
+.carousel-caption p{
+    font-size: 120%;
+    font-family: 'Comfortaa Bold', sans-serif;
+}
+
+@media (max-width: 1024px) {
+    
+    .carousel-caption{
+        margin-bottom: 13%;
+        padding: 0% 6%;
+    }
+    .carousel-caption h5{
+        font-size: 300%;
+    }
+    .carousel-caption p{
+        font-size: 100%;
+    }
+}
+@media (max-width: 850px) {
+    
+    .carousel-caption{
+        padding: 0% 9%;
+    }
+    .carousel-caption h5{
+        font-size: 220%;
+    }
+    .carousel-caption p{
+        font-size: 70%;
+    }
+}
+@media (max-width: 670px) {
+    
+    .carousel-caption{
+        padding: 0% 8%;
+    }
+    .carousel-caption h5{
+        font-size: 180%;
+    }
+     .carousel-caption p{
+        font-size: 60%;
+    }
+}
+@media (max-width: 500px) {
+    
+    .carousel-caption{
+        margin-bottom: 8%;
+        padding: 0% 6%;
+    }
+    .carousel-caption h5{
+        border-bottom: 2px solid #F40F0F;
+        font-size: 140%;
+    }
+    .carousel-caption p{
+        font-size: 50%;
+    }
+}
+
+@media (max-width: 360px) {
+    
+    .carousel-caption{
+        margin-bottom: 0%;
+        padding: 0% 0%;
+    }
+    .carousel-caption h5{
+        border-bottom: 2px solid #F40F0F;
+        font-size: 110%;
+    }
+    .carousel-caption p{
+        font-size: 40%;
+    }
+}
+/*============Barra buscador y Tabla==============*/
+.contenedorBuscador {
+    margin: 6% 0%;
+}
+.form-box {
+    display: flex;
+    padding: 0% 2%;
+    width: 100%;
+    margin: auto;
+    max-width: 800px;
+}
+.campo-busqueda {
+    height: 5%;
+    padding: 2.5%;
+}
+.auto {
+    font-family: "Comfortaa Bold";
+    width: 90%;
+    border: none;
+    border-bottom: 2px solid #343536;
+    outline: none;
+    height: auto;
+    font-size: 100%;
+}
+
+.btn-buscar {
+    height: 64px;
+    width: 10%;
+    background: #343536;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+.btn-buscar i {
+    font-size: 25px;
+}
+
+.seccionAutos {
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.seccionAutos .card{
+    width: 330px;
+    height: 520px;
+    overflow: hidden;
+    margin: 3%;
+    border: 1px solid rgba(0,0,0,0);
+}
+.seccionAutos .card:hover {
+    border: 1px solid rgba(0,0,0,.2);
+}
+.img-box{
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+}
+.img-box img{
+    width: 100%;
+    height: 100%;
+    transition: all .7s;
+}
+.img-box img:hover {
+    transform: scale(1.2);
+}
+
+.seccionAutos .card h4 {
+    padding: 2.5% 1%;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Comfortaa Bold", sans-serif;
+}
+.seccionAutos .card p{
+    font-family: "Muli", sans-serif;
+    padding: 0% 6%;
+}
+
+.btnPopUp {
+    text-align: center;
+}
+.btnPopUp a{
+    font-family: "Comfortaa Bold", sans-serif;
+    text-decoration: none;
+    background-color: #101010;
+    color: white;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 100%;
+    padding: 3% 35%;
+    text-align: center;
+    transition: all .25s;
+}
+
+.btnPopUp a:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #343536;
+}
+
+.cargando {
+    width: 80px; 
+    top: 100%;
+    left: 50%;
+    display: block;
+}
+
+@media(max-width: 770px){
+    .form-box {
+        max-width: 600px;
+    }
+    .campo-busqueda {
+        padding: 1.5%;
+    }
+    .auto {
+        font-size: 80%;
+    }
+    .btn-buscar {
+        width: 15%;
+    }
+    .contenedorBuscador p {
+        font-size: 80%;
+    }
+    .seccionAutos .card{
+        width: 230px;
+        height: 450px;
+        margin: 1%;
+    }
+    .img-box{
+        height: 200px;
+    }
+    .seccionAutos .card h4 {
+        font-size: 100%;
+    }
+    .btnPopUp a{
+        font-size: 100%;
+        padding: 2% 25%;
+    }
+}
+@media(max-width: 570px){
+    .form-box {
+        max-width: 400px;
+    }
+    .btn-buscar {
+        width: 12%;
+        height: 50px;
+    }
+    .btn-buscar i {
+        font-size: 100%;
+    } 
+    .seccionAutos .card{
+        width: 190px;
+        height: 330px;
+    }
+    .img-box{
+        height: 120px;
+    }
+    .seccionAutos .card h4 {
+        font-size: 90%;
+    }
+    .seccionAutos .card p{
+        font-size: 70%;
+    }
+    .btnPopUp a{
+        font-size: 80%;
+        padding: 2% 20%;
+    }
+}
+
+/*============POP UP IMG==============*/
+.modal{
+    backdrop-filter: blur(3px);
+}
+.modal-content{
+    border: none !important;
+}
+.modal-body {
+    padding: 0 !important;
+}
+.modal-xl {
+    max-width: 1000px !important;
+}
+.col-lg-5{
+    padding: 1% 0 !important;
+}
+.carousel-control-next, .carousel-control-prev{
+    opacity: 1 !important;
+}
+.carousel-indicators li{
+    width: 25px !important;
+    height: 6px !important;
+}
+ol{
+  margin-bottom: 1% !important;  
+}
+.btn-close-popup{
+    text-decoration: none;
+    color: white !important;
+    background: #000;
+    padding: .5% 1.5%;
+    top:-5%;
+    left: 97%;
+    border-radius: 50%;
+    position: absolute;
+    font-size: 150%;
+    z-index: 3000;
+    opacity: 1;
+}
+.btn-close-popup:hover {
+    opacity: .9;
+    text-decoration: none;
+}
+
+.col-lg-5 h2 {
+    font-family: "Lemon Milk Light", sans-serif;
+    font-size: 180%; 
+}
+
+.col-lg-5 p {
+    font-family: "Muli", sans-serif;
+    font-size: 110%;
+    color: black !important;
+}
+
+@media (max-width: 1200px) {
+    .modal-xl {
+        max-width: 900px !important;
+    }
+}
+@media (max-width: 991px) {
+    .modal-xl {
+        max-width: 800px !important;
+    }
+    .modal-dialog {
+        max-width: 600px !important;
+    }
+    .col-lg-5 {
+        padding-left: 25px !important;
+    }
+    .btn-close-popup{
+        padding: 1% 2.5%;
+        top:-3%;
+        font-size: 130%;
+    }
+}
+@media (max-width: 645px){
+    .modal-dialog {
+        max-width: 450px !important;
+    }
+
+    .col-lg-5 h2 {
+       font-size: 150%; 
+    }
+    .col-lg-5 p {
+        font-size: 80%;
+    }
+}
+@media (max-width: 450px){
+    .modal-dialog {
+        max-width: 330px !important;
+    }
+    .btn-close-popup{
+        padding: .5% 2.5%;
+        top:-3%;
+        left: 96%;
+        font-size: 110%;
+    }
+}
+@media (min-width: 0px){
+    .modal-dialog {
+        margin: 1.75rem auto !important;
+    }
+}
+
+/*=================FOOTER====================*/
+
+footer{
+    width: 100%;
+    background-image: url(../img/fondos/mecanicoFondo.jpg);
+    color: white; 
+    display: block;
+}
+
+.inner-footer {
+	width: 100%;
+	margin: auto;
+	padding: 2%;
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	justify-content: center;
+}
+
+.footer-items {
+	width: 30%;
+	padding: 0% 3%;
+	box-sizing: border-box;
+}
+
+.footer-items p {
+    font-family: 'Muli', sans-serif;
+	font-size: 16px;
+	line-height: 25px;
+}
+
+.footer-items h2 {
+    font-family:"Lemon Milk Medium"; 
+	margin: 2% 0;
+	font-size: 160%;
+	text-transform: uppercase;
+}
+
+.borde {
+	height: 1%;
+	width: 10%;
+	background: #EC3C3C;
+}
+
+.footer-items ul {
+    font-family: 'Muli', sans-serif;
+	list-style: none;
+	color: #fff;
+	font-size: 100%;
+	letter-spacing: 0.5px;
+}
+
+.footer-items ul a {
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	transition: 0.3s;
+}
+
+.footer-items ul a:hover {
+	color: #EC3C3C;
+    text-decoration: none;
+}
+
+.footer-items ul li {
+	margin: 4% 0;
+}
+
+.footer-items li i {
+	margin-right: 3%;
+}
+
+.dir{
+	font-size: 140%;
+}
+
+.social-media i {
+	margin: 2% .5%;
+	padding: 4%;
+    font-size: 25px;
+	border-radius: 50%;
+	transition: 0.3s;
+}
+
+.social-media .Face {
+    color: #375AD4;
+    border: 2px solid #375AD4;
+}
+
+.social-media .Face:hover {
+	background: #375AD4;
+    color: #fff;
+}
+
+.footer-bottom{
+    background: #101010;
+}
+.copyright {
+    width: 90%;
+	margin: auto;
+	padding: 1.5% 4.5%;
+	color: #fff;
+    font-family: 'Muli', sans-serif;
+	font-size: 100%;
+}
+
+@media (max-width: 1085px) {
+	.footer-items {
+		width: 50%;
+	}
+}
+
+@media (max-width: 673px) {
+    .phone{
+        display: none;
+    }
+	.footer-items {
+		width: 100%;
+	}
+    .footer-items h2, .footer-items ul, .copyright {
+		font-size: 80%;
+	}
+    .social-media i {
+        padding: 2%;
+        font-size: 20px;
+    }
+    
+    .copyright {
+	    padding: 3% 4%;
+    }
+}
+

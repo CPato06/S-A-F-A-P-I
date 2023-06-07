@@ -1,0 +1,899 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,700');
+
+@font-face{
+    font-family:"Lemon Milk Light";
+    src: url("../fuentes/LemonMilk/LEMONMILK-Light.otf");
+}
+ @font-face{   
+    font-family:"Lemon Milk Medium";
+    src: url("../fuentes/LemonMilk/LEMONMILK-Medium.otf");
+}
+ @font-face{   
+    font-family:"Comfortaa Bold";
+    src: url("../fuentes/Comfortaa/Comfortaa-Bold.ttf");
+}
+
+*{   
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+    box-sizing:border-box;  
+}
+body {
+    background-color: #e8e8e8;
+}
+body::-webkit-scrollbar {
+    width: 7px;
+    background-color: rgba(0,0,0,.9);
+}
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(255,255,255,.17);
+    border-radius: 10px;
+    border-right: 2px solid rgba(255,255,255,.0);
+    
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:20px;
+	right:20px;
+	background-color:#00CF6A;
+	color:#FFF;
+	border-radius:50%;
+	text-align:center;
+    font-size:190%;
+	box-shadow: 2px 2px 3px #252525;
+    z-index:2000;
+}
+.float:hover {
+	text-decoration: none;
+	color: #00CF6A;
+    background-color:#fff;
+    transition: all .25s;
+}
+
+.my-float{
+	margin-top:25%;
+}
+
+/*============MENU==============*/
+header {
+    background-color: #151515;
+}
+.contHeader{
+    padding: 1% 2%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: auto;
+    align-items: center;
+}
+.informacion{
+    display: flex;
+    justify-content: space-between;
+}
+.informacion i {
+    color: #EC3C3C;
+    font-size: 180%;
+    padding-right: 7%;
+}
+.columnaDir, .columnaHorario, .columnaTel {
+    align-items: center;
+    display: flex;
+    padding: 2%;
+}
+.columnaDir {
+    min-width: 300px;
+}
+.columnaHorario {
+    min-width: 260px;
+}
+.columnaTel {
+    min-width: 180px;
+}
+
+.columnaDir p, .columnaHorario p, .columnaTel p {
+    font-family:"Comfortaa Bold";
+    font-weight: 600;
+    font-size: 80%;
+    color: white;
+    margin-bottom: 0%;
+}
+
+.logoPrincipal {
+    width: 50%;
+}
+.navbar {
+    box-shadow: 0px -5px 13px 1px rgba(0,0,0,0.42);
+}
+
+.navbar-dark .navbar-nav .nav-item.active .nav-link, .navbar-dark .navbar-nav .nav-item.active:hover .nav-link{
+    color: #EC3C3C;
+}
+.navbar-dark .navbar-nav .nav-item .nav-link{
+    font-family: 'Comfortaa Bold', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+}
+.navbar-dark{
+    padding: 1% !important;
+    background-color: #252525;
+}
+.nav-item {
+    padding: 0 4%;
+}
+.navbar-dark .navbar-nav .nav-item:hover, .navbar-dark .navbar-nav .nav-item:hover .nav-link{
+    color: #EC3C3C;
+}
+.navbar-toggler{
+    color:white !important;
+    border-color: rgba(255,255,255,0) !important;
+}
+.navbar-toggler:hover{
+    cursor: pointer;
+    color:white !important;
+}
+.dropdown-menu {
+    background-color: #252525 !important;
+    top: 115% !important;
+}
+.dropdown-item {
+    font-family: 'Comfortaa Bold', sans-serif;
+    text-transform: uppercase;
+    color: white !important;
+    font-size: 90%;
+}
+.dropdown-item:hover {
+    background-color: rgba(0,0,0,.0) !important;
+    color: #EC3C3C !important;
+}
+@media (max-width: 1024px) {
+    .informacion i {
+        font-size: 150%;
+        padding-right: 7%;
+    }
+    .columnaDir p, .columnaHorario p, .columnaTel p {
+        font-size: 50%;
+    }
+    .columnaDir {
+        min-width: 200px;
+    }
+    .columnaHorario {
+        min-width: 180px;
+    }
+    .columnaTel {
+        min-width: 120px;
+    }
+    .logoPrincipal {
+        width: 50%;
+    }
+}
+
+@media (max-width: 770px) {
+    .informacion{
+        display: none;
+    }
+    .logoPrincipal {
+        width: 20%;
+    }
+    .navbar-dark .navbar-nav .nav-item .nav-link, .navbar-dark .navbar-nav .nav-item.active .nav-link{
+        font-size: 80%;
+    }
+}
+@media (max-width: 550px) {
+    .logoPrincipal {
+        width: 25%;
+    }
+    
+}
+
+/*============SLIDER==============*/
+.carousel-item{
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.carousel-caption{
+    margin-bottom: 13%;
+    padding: 0% 9%;
+}
+.carousel-caption h5{
+    font-size: 350%;
+    border-bottom: 5px solid #F40F0F;
+    font-family: 'Lemon Milk Medium', sans-serif;
+    margin-bottom: 2% !important;
+}
+.carousel-caption p{
+    font-size: 120%;
+    font-family: 'Comfortaa Bold', sans-serif;
+}
+
+@media (max-width: 1024px) {
+    
+    .carousel-caption{
+        margin-bottom: 9%;
+        padding: 0% 6%;
+    }
+    .carousel-caption h5{
+        font-size: 300%;
+    }
+    .carousel-caption p{
+        font-size: 100%;
+    }
+}
+@media (max-width: 850px) {
+    
+    .carousel-caption{
+        margin-bottom: 10%;
+        padding: 0% 4%;
+    }
+    .carousel-caption h5{
+        font-size: 230%;
+    }
+    .carousel-caption p{
+        font-size: 70%;
+    }
+}
+@media (max-width: 670px) {
+    
+    .carousel-caption{
+        margin-bottom: 8%;
+        padding: 0% 8%;
+    }
+    .carousel-caption h5{
+        font-size: 180%;
+    }
+}
+@media (max-width: 500px) {
+    
+    .carousel-caption{
+        margin-bottom: 6%;
+        padding: 0% 5%;
+    }
+    .carousel-caption h5{
+        border-bottom: 2px solid #F40F0F;
+        font-size: 140%;
+    }
+    .carousel-caption p{
+        font-size: 50%;
+    }
+}
+
+@media (max-width: 360px) {
+    
+    .carousel-caption{
+        margin-bottom: 0%;
+        padding: 0% 0%;
+    }
+    .carousel-caption h5{
+        border-bottom: 2px solid #F40F0F;
+        font-size: 110%;
+    }
+    .carousel-caption p{
+        font-size: 40%;
+    }
+}
+/*============SERVICIOS==============*/
+
+.services-section{
+    margin: 4% 0%;
+    width: 100%;
+}
+
+.inner-width{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1%;
+}
+
+.services-section h1{
+    font-family: "Lemon Milk Medium";
+    text-align: center;
+    font-size: 200%;
+    font-weight: 50;
+    margin-bottom: 3%;
+}
+
+.textColor{
+    color: #F23939;
+}
+
+.service{
+    text-align: center;
+    margin: 6% 0%;
+}
+
+.service-icon{
+    width: 20%;
+    margin: auto;
+    color: #F23939;
+    background-color: whitesmoke;
+    line-height: 250%;
+    font-size: 200%;
+    border-radius: 70%;
+}
+
+.service-name{
+    font-family: "Open Sans",sans-serif;
+    font-weight: 600;
+    font-size: 120%;
+    margin: 3% 0;
+}
+
+.service-desc{
+    font-family:"Comfortaa Bold";
+    max-width: 400px;
+    margin: 0% 6%;
+    color: #333;
+    font-size: 100%;
+}
+
+.owl-dots{
+    text-align: center;
+    margin-top: 2%;
+}
+
+.owl-dot{
+    width: 1.3%;
+    height: 14px;
+    background: #808080 !important;
+    margin: 0 .6%;
+    border-radius: 14px;
+    outline: none;
+    transition: .25s linear;
+}
+
+.owl-dot.active{
+    width: 4%;
+    background: #F23939 !important;
+}
+
+.owl-dot:hover{
+    width: 4%;
+    background: #F23939 !important;
+}
+
+@media (max-width: 770px) {
+    
+    .services-section{
+        margin: 5.5% 0%;
+    }
+    .services-section h1{
+        font-size: 170%;
+    }
+    .owl-dot{
+        width: 1.8%;
+        margin: 0 .5%;
+    }
+    .service-name{
+        font-size: 100%;
+    }
+    .service-desc{
+        font-size: 90%;
+    }
+    .service-icon{
+        width: 14%;
+        font-size: 160%;
+    }
+}
+@media (max-width: 550px) {
+    
+    .services-section h1{
+        font-size: 100%;
+    }
+    .owl-dot{
+        width: 3%;
+    }
+    .owl-dot.active{
+        width: 7%;
+    }
+    .owl-dot:hover{
+        width: 7%;
+    }
+    .service-name{
+        font-size: 90%;
+    }
+    .service-desc{
+        font-size: 70%;
+    }
+    .service-icon{
+        font-size: 130%;
+    }
+
+}
+/*============AUTOS RECIENTES==============*/
+.containerAll-Autos {
+    background-color: #252525;
+}
+.tituloAutos {
+    padding: 2% 0%;
+}
+.tituloAutos h1 {
+    font-family: 'Lemon Milk Light', sans-serif;
+    text-align: center;
+    background-color: #F02B2B;
+    color: white;
+    font-size: 200%;
+    max-width: 360px;
+    padding: 1% 0;
+    margin: auto;
+}
+.seccionAutos {
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.seccionAutos .card{
+    width: 330px;
+    height: 430px;
+    border-radius: 1%;
+    box-shadow: 0 2px 2px rgba(0,0,0,.7);
+    overflow: hidden;
+    margin: 5% 2%;
+    text-align: center;
+    transition: all .25s;
+    background-color: #101010;
+    align-items: center;
+}
+
+.seccionAutos .card:hover {
+    transform: translateY(-15px);
+    -webkit-box-shadow: 6px 7px 5px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 7px 5px 1px rgba(0,0,0,0.75);
+    box-shadow: 6px 7px 5px 1px rgba(0,0,0,0.75);
+}
+
+.seccionAutos .card img{
+    width: 330px;
+    height: 220px;
+}
+.seccionAutos .card h4 {
+    padding: 3% 0;
+    font-family: 'Lemon Milk Light', sans-serif;
+}
+.seccionAutos .card h4, .seccionAutos .card p{
+    color: #7C7C7C;
+}
+
+.seccionAutos .card p{
+    font-family: "Comfortaa Bold", sans-serif;
+    padding: 2% 8%;
+    font-size: 80%;
+}
+
+.seccionAutos .card a{
+    font-family: "Comfortaa Bold", sans-serif;
+    text-decoration: none;
+    background-color: #A41414;
+    color: white;
+    width: 45%;
+    font-size: 90%;
+    padding: 1.5% 2%;
+    text-align: center;
+    box-shadow: 0px 3px 0px #A74040;
+}
+
+.seccionAutos .card a:hover {
+    cursor: pointer;
+    color: white;
+    box-shadow: 0px 3px 0px #6E0A0A;
+}
+
+.textoBuscador {
+    max-width: 550px;
+    padding: 4% 3%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.textoBusc h3{
+    font-family: 'Comfortaa Bold', sans-serif;
+    color: #7A7676;
+    margin-top: 4%;
+    margin-bottom: 0;
+}
+.button {
+    font-family: 'Comfortaa Bold', sans-serif;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #F02B2B;
+    color: white;
+    font-size: 1.2em;
+    padding: 8% 3%;
+    border-radius: 4%;
+    text-align: center;
+    width: 150px;
+    box-shadow: 0px 3px 0px #A74040;
+}
+.button:hover {
+    text-decoration: none;
+    color: white;
+    box-shadow: 0px 0px 0px;
+}
+@media(max-width: 720px){
+    .tituloAutos {
+        padding: 5% 0;
+    }
+    .seccionAutos .card{
+        width: 310px;
+        height: 400px;
+        margin: 2%;
+    }
+    .seccionAutos .card img{
+        width: 310px;
+        height: 200px;
+    }
+}
+@media(max-width: 500px){
+    .tituloAutos h1 {
+        font-size: 150%;
+        max-width: 260px;
+        padding: 1% 0;
+    }
+    .seccionAutos .card{
+        width: 310px;
+        height: 380px;
+        margin: 2%;
+    }
+    .seccionAutos .card h4 {
+        font-size: 100%;
+    }
+    .seccionAutos .card p{
+        font-size: 70%;
+    }
+    .textoBuscador {
+        justify-content: center;
+    }
+    .textoBusc h3 {
+        display:none;
+    }
+}
+
+/*============POP UP IMG==============*/
+.modal-content{
+    border: none !important;
+}
+.modal-body {
+    padding: 0 !important;
+}
+.modal-xl {
+    max-width: 1000px !important;
+}
+.col-lg-5{
+    padding: 1% 0 !important;
+}
+.carousel-control-next, .carousel-control-prev{
+    opacity: 1 !important;
+}
+.carousel-indicators li{
+    width: 25px !important;
+    height: 6px !important;
+}
+ol{
+  margin-bottom: 1% !important;  
+}
+.btn-close-popup{
+    text-decoration: none;
+    color: white !important;
+    background: #000;
+    padding: .5% 1.5%;
+    top:-5%;
+    left: 97%;
+    border-radius: 50%;
+    position: absolute;
+    font-size: 150%;
+    z-index: 3000;
+    opacity: 1;
+}
+.btn-close-popup:hover {
+    opacity: .9;
+    text-decoration: none;
+}
+
+.col-lg-5 h2 {
+    font-family: "Lemon Milk Light", sans-serif;
+    font-size: 180%; 
+}
+
+.col-lg-5 p {
+    font-family: "Muli", sans-serif;
+    font-size: 110%;
+    color: black !important;
+}
+
+@media (max-width: 1200px) {
+    .modal-xl {
+        max-width: 900px !important;
+    }
+}
+@media (max-width: 991px) {
+    .modal-xl {
+        max-width: 800px !important;
+    }
+    .modal-dialog {
+        max-width: 600px !important;
+    }
+    .col-lg-5 {
+        padding-left: 25px !important;
+    }
+    .btn-close-popup{
+        padding: .8% 1.8%;
+        top:-3%;
+        font-size: 130%;
+    }
+}
+@media (max-width: 645px){
+    .modal-dialog {
+        max-width: 450px !important;
+    }
+
+    .col-lg-5 h2 {
+       font-size: 150%; 
+    }
+    .col-lg-5 p {
+        font-size: 80%;
+    }
+}
+@media (max-width: 450px){
+    .modal-dialog {
+        max-width: 330px !important;
+    }
+    .btn-close-popup{
+        padding: .5% 2.5%;
+        top:-3%;
+        left: 96%;
+        font-size: 110%;
+    }
+}
+@media (min-width: 0px){
+    .modal-dialog {
+        margin: 1.75rem auto !important;
+    }
+}
+
+/*============GALERIA AUTO==============*/
+.GaleriaTitulo {
+    padding-top: 3%;
+    text-align: center;
+}
+.GaleriaTitulo h1 {
+    font-family: "Lemon Milk Medium", sans-serif;
+}
+.GaleriaTitulo span {
+    color: #F23939;
+}
+.GaleriaTitulo p {
+    font-family: "Comfortaa Bold", sans-serif;
+    color: #7A7676;
+}
+.contenedorGaleria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 5% 0.5%;
+    flex-wrap: wrap;
+}
+.box {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+.box:hover {
+    z-index: 1;
+    transform: scale(1.2);
+    box-shadow: 0 25px 40px rgba(0,0,0,.5);
+}
+.imgBox{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.imgBox:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0,0,0,.8);
+    mix-blend-mode: multiply;
+    opacity: 0;
+    transition: all 0.5s;    
+}
+.box:hover .imgBox:before{
+    opacity: 1;
+}
+.imgBox img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.contenido{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    padding: 3%;
+    align-items: flex-end;
+}
+.contenido h2 {
+    color: #FFF;
+    transition: all .4s;
+    text-transform: uppercase;
+    margin-bottom: 2%;
+    font-family: "Lemon Milk Medium",sans-serif;
+    font-size: 150%;
+    transform: translateY(200px);
+}
+.box:hover .contenido h2 {
+    transform: translateY(0);
+    transition-delay: .4s;
+}
+
+@media (max-width: 500px) {
+    .GaleriaTitulo h1 {
+        font-size: 150%;
+    } 
+    .GaleriaTitulo p{
+        font-size: 80%;
+    }
+    .box {
+        width: 270px;
+        height: 220px;
+    }
+    .contenido h2 {
+        margin-bottom: 2%;
+        font-size: 90%;
+    }
+}
+/*============FOOTER==============*/
+
+footer{
+    width: 100%;
+    background-image: url(../img/fondos/mecanicoFondo.jpg);
+    color: white; 
+    display: block;
+}
+
+.inner-footer {
+	width: 100%;
+	margin: auto;
+	padding: 2%;
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	justify-content: center;
+}
+
+.footer-items {
+	width: 30%;
+	padding: 0% 3%;
+	box-sizing: border-box;
+}
+
+.footer-items p {
+    font-family: 'Muli', sans-serif;
+	font-size: 16px;
+	line-height: 25px;
+}
+
+.footer-items h2 {
+    font-family:"Lemon Milk Medium"; 
+	margin: 2% 0;
+	font-size: 160%;
+	text-transform: uppercase;
+}
+
+.borde {
+	height: 1%;
+	width: 10%;
+	background: #EC3C3C;
+}
+
+.footer-items ul {
+    font-family: 'Muli', sans-serif;
+	list-style: none;
+	color: #fff;
+	font-size: 100%;
+	letter-spacing: 0.5px;
+}
+
+.footer-items ul a {
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	transition: 0.3s;
+}
+
+.footer-items ul a:hover {
+	color: #EC3C3C;
+    text-decoration: none;
+}
+
+.footer-items ul li {
+	margin: 4% 0;
+}
+
+.footer-items li i {
+	margin-right: 3%;
+}
+
+.dir{
+	font-size: 140%;
+}
+
+.social-media i {
+	margin: 2% .5%;
+	padding: 4%;
+    font-size: 25px;
+	border-radius: 50%;
+	transition: 0.3s;
+}
+
+.social-media .Face {
+    color: #375AD4;
+    border: 2px solid #375AD4;
+}
+
+.social-media .Face:hover {
+	background: #375AD4;
+    color: #fff;
+}
+
+.footer-bottom{
+    background: #101010;
+}
+.copyright {
+    width: 90%;
+	margin: auto;
+	padding: 1.5% 4.5%;
+	color: #fff;
+    font-family: 'Muli', sans-serif;
+	font-size: 100%;
+}
+
+@media (max-width: 1085px) {
+	.footer-items {
+		width: 50%;
+	}
+}
+
+@media (max-width: 673px) {
+    .phone{
+        display: none;
+    }
+	.footer-items {
+		width: 100%;
+	}
+    .footer-items h2, .footer-items ul, .copyright {
+		font-size: 80%;
+	}
+    .social-media i {
+        padding: 2%;
+        font-size: 20px;
+    }
+    
+    .copyright {
+	    padding: 3% 4%;
+    }
+}
