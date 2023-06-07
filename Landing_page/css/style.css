@@ -1,0 +1,185 @@
+html{
+    background-color:#000055;
+}
+
+h1{
+    color: #0091FF;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.letra{
+    color: white;
+}
+
+hr{
+    border-color: #0091FF;
+}
+
+.link{
+    color:#0091FF;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+}
+.link_btn{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+}
+.link:hover{
+    color: white;
+}
+.link:active{
+    color: gray;
+}
+.titulo{
+    text-decoration: none;
+}
+.titulo:hover{
+    color: white;
+}
+.titulo:active{
+    color: gray;
+}
+.titulo:visited{
+    color:#0091FF;
+}
+.log{
+    background-color: #0091FF; 
+    color: #000055; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display:block;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.log:hover{
+    background-color: white;
+}
+.log:active{
+    color: gray;
+}
+.texto{
+    width: 50%;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    font-weight: bold;
+    text-align: left;
+}
+.cabecera{
+    width: 50%;
+    
+}
+.lts_form{
+    color: #000055;
+}
+
+
+
+
+
+
+.form-login {
+    width: 500px;
+    height: 440px;
+    background: white;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: 7px 13px 37px #000;
+    padding: 20px 30px;
+    border-top: 4px solid #017bab;
+    color: white;
+  }
+  .form-registro {
+    width: 500px;
+    height: 570px;
+    background: white;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: 7px 13px 37px #000;
+    padding: 20px 30px;
+    border-top: 4px solid #017bab;
+    color: white;
+  }
+  
+  .form-login h5 {
+    margin: 0;
+    text-align: center;
+    height: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid;
+    font-size: 20px;
+  }
+  
+  .controls {
+    width: 100%;
+    border: 1px solid #0091FF;
+    margin-bottom: 15px;
+    padding: 11px 10px;
+    background: white;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .buttons {
+    width: 100%;
+    height: 40px;
+    background: #0091FF;
+    border: none;
+    color: white;
+    margin-bottom: 16px;
+    border-radius: 20px;
+  }
+  
+  .form-login p{
+    height: 40px;
+    text-align: center;
+    border-bottom: 1px solid;
+  }
+  
+  .form-login a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .form-login a:hover {
+    text-decoration: underline;
+  }
+  .imgn{ 
+    width: 440px;
+    height: 440px;
+  }
+  .icono{
+    position: absolute;
+    height: 50%;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    opacity: 0.3;
+    cursor: pointer;
+  }
+  .icono:hover{
+    opacity: 0.8;
+  }
+  .tabla{
+    border-collapse: collapse;
+    border-color: green;
+    text-align: left;
+
+  }
+  .comb_celd{
+    column-span: 2;
+  }
+  .ltrs_dash{
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 10px;
+    margin-top: 10%;
+  }
+  .ltrs_dash{
+    font-weight: 100;
+  }
+  .env_com{
+    background-color: #0091FF;
+    border-radius: 20px;
+  }
+ 
