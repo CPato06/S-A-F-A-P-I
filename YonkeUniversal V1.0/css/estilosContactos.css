@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,700');
+
+@font-face{
+    font-family:"Lemon Milk Light";
+    src: url("../fuentes/LemonMilk/LEMONMILK-Light.otf");
+}
+ @font-face{   
+    font-family:"Lemon Milk Medium";
+    src: url("../fuentes/LemonMilk/LEMONMILK-Medium.otf");
+}
+ @font-face{   
+    font-family:"Comfortaa Bold";
+    src: url("../fuentes/Comfortaa/Comfortaa-Bold.ttf");
+}
+ @font-face{   
+    font-family:"Geo Sans Light";
+    src: url("../fuentes/geosanslight/GeosansLight.ttf");
+}
+
+*{   
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+    box-sizing:border-box;  
+}
+body {
+    background-color: #e8e8e8;
+}
+body::-webkit-scrollbar {
+    width: 7px;
+    background-color: rgba(0,0,0,.9);
+}
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(255,255,255,.17);
+    border-radius: 10px;
+    border-right: 2px solid rgba(255,255,255,.0);
+    
+}
+/*============MENU==============*/
+.header {
+    background-color: #151515;
+}
+.contHeader{
+    padding: 1% 2%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: auto;
+    align-items: center;
+}
+.informacion{
+    display: flex;
+    justify-content: space-between;
+}
+.informacion i {
+    color: #EC3C3C;
+    font-size: 180%;
+    padding-right: 7%;
+}
+.columnaDir, .columnaHorario, .columnaTel {
+    align-items: center;
+    display: flex;
+    padding: 2%;
+}
+.columnaDir {
+    min-width: 300px;
+}
+.columnaHorario {
+    min-width: 260px;
+}
+.columnaTel {
+    min-width: 180px;
+}
+
+.columnaDir p, .columnaHorario p, .columnaTel p {
+    font-family:"Comfortaa Bold";
+    font-weight: 600;
+    font-size: 80%;
+    color: white;
+    margin-bottom: 0%;
+}
+
+.logoPrincipal {
+    width: 50%;
+}
+.navbar {
+    box-shadow: 0px -5px 13px 1px rgba(0,0,0,0.42);
+}
+
+.navbar-dark .navbar-nav .nav-item.active .nav-link, .navbar-dark .navbar-nav .nav-item.active:hover .nav-link{
+    color: #EC3C3C;
+}
+.navbar-dark .navbar-nav .nav-item .nav-link{
+    font-family: 'Comfortaa Bold', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+}
+.navbar-dark{
+    padding: 1% !important;
+    background-color: #252525;
+}
+.nav-item {
+    padding: 0 4%;
+}
+.navbar-dark .navbar-nav .nav-item:hover, .navbar-dark .navbar-nav .nav-item:hover .nav-link{
+    color: #EC3C3C;
+}
+.navbar-toggler{
+    color:white !important;
+    border-color: rgba(255,255,255,0) !important;
+}
+.navbar-toggler:hover{
+    cursor: pointer;
+    color:white !important;
+}
+.dropdown-menu {
+    background-color: #252525 !important;
+    top: 115% !important;
+}
+.dropdown-item {
+    font-family: 'Comfortaa Bold', sans-serif;
+    text-transform: uppercase;
+    color: white !important;
+    font-size: 90%;
+}
+.dropdown-item:hover {
+    background-color: rgba(0,0,0,.0) !important;
+    color: #EC3C3C !important;
+}
+
+@media (max-width: 1024px) {
+    .informacion i {
+        font-size: 150%;
+        padding-right: 7%;
+    }
+    .columnaDir p, .columnaHorario p, .columnaTel p {
+        font-size: 50%;
+    }
+    .columnaDir {
+        min-width: 200px;
+    }
+    .columnaHorario {
+        min-width: 180px;
+    }
+    .columnaTel {
+        min-width: 120px;
+    }
+    .logoPrincipal {
+        width: 50%;
+    }
+}
+@media (max-width: 770px) {
+    .informacion{
+        display: none;
+    }
+    .logoPrincipal {
+        width: 20%;
+    }
+    .navbar-dark .navbar-nav .nav-item .nav-link, .navbar-dark .navbar-nav .nav-item.active .nav-link{
+        font-size: 80%;
+    }
+}
+@media (max-width: 550px) {
+    .logoPrincipal {
+        width: 25%;
+    }
+    
+}
+
+/*============SLIDER==============*/
+.carousel-item{
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.carousel-caption{
+    margin-bottom: 13%;
+    padding: 0% 12%;
+}
+.carousel-caption h5{
+    font-size: 350%;
+    border-bottom: 5px solid #F40F0F;
+    font-family: 'Lemon Milk Medium', sans-serif;
+    margin-bottom: 2% !important;
+}
+.carousel-caption p{
+    font-size: 120%;
+    font-family: 'Comfortaa Bold', sans-serif;
+}
+
+@media (max-width: 1024px) {
+    
+    .carousel-caption{
+        margin-bottom: 9%;
+        padding: 0% 6%;
+    }
+    .carousel-caption h5{
+        font-size: 300%;
+    }
+    .carousel-caption p{
+        font-size: 100%;
+    }
+}
+@media (max-width: 850px) {
+    
+    .carousel-caption{
+        margin-bottom: 10%;
+    }
+    .carousel-caption h5{
+        font-size: 250%;
+    }
+    .carousel-caption p{
+        font-size: 70%;
+    }
+}
+@media (max-width: 670px) {
+    
+    .carousel-caption{
+        padding: 0% 8%;
+    }
+    .carousel-caption h5{
+        font-size: 200%;
+    }
+}
+@media (max-width: 500px) {
+    
+    .carousel-caption{
+        margin-bottom: 6%;
+        padding: 0% 5%;
+    }
+    .carousel-caption h5{
+        border-bottom: 2px solid #F40F0F;
+        font-size: 160%;
+    }
+    .carousel-caption p{
+        font-size: 50%;
+    }
+}
+
+@media (max-width: 360px) {
+    
+    .carousel-caption{
+        margin-bottom: 2%;
+    }
+    .carousel-caption h5{
+        border-bottom: 2px solid #F40F0F;
+        font-size: 130%;
+    }
+    .carousel-caption p{
+        font-size: 40%;
+    }
+}
+/*==========CONTACTANOS=================*/
+
+.content {
+    margin: 0% 5%;
+    padding: 4% 0%;
+    z-index: 1;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-wrapper {
+    -webkit-box-shadow: 6px 7px 5px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 7px 5px 1px rgba(0,0,0,0.75);
+    box-shadow: 6px 7px 5px 1px rgba(0,0,0,0.75);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.contact-form {
+    background: #222222;
+    height: 600px;
+}
+
+/* CONTACT INFO */
+.contact-info {
+    background-image: url(../img/fondos/mecanicoFondo.jpg);
+    color: white;
+    height: 600px;
+    padding: 7%;
+}
+
+.contact-info span{
+    font-size: 800%;
+    display: block;
+    text-align: center;
+    margin-bottom: 7%;
+}
+.contact-info i{
+    margin-right: 2%;
+    font-size: 150%;
+    cursor: pointer;
+    transition: all .3s;
+}
+.contact-info h4, .contact-info ul, .contact-info p {
+    margin-top: 4%;
+}
+
+@media(max-width: 770px) {
+    .contact-wrapper {
+        display: block;
+    }
+
+}
+
+@media(max-width: 550px) {
+    
+    .contact-form {
+        background: #222222;
+        height: 450px;
+    }
+    .contact-info {
+        height: 450px;
+    }
+    .contact-info span{
+        font-size: 500%;
+    }
+    .contact-info h4 {
+        font-size: 120%;
+    }
+    .contact-info li, .contact-info p{
+        font-size: 90%;
+    }
+}
+/*============FOOTER==============*/
+
+footer{
+    width: 100%;
+    background-image: url(../img/fondos/mecanicoFondo.jpg);
+    color: white; 
+    display: block;
+}
+
+.inner-footer {
+	width: 100%;
+	margin: auto;
+	padding: 2%;
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	justify-content: center;
+}
+
+.footer-items {
+	width: 30%;
+	padding: 0% 3%;
+	box-sizing: border-box;
+}
+
+.footer-items p {
+    font-family: 'Muli', sans-serif;
+	font-size: 16px;
+	line-height: 25px;
+}
+
+.footer-items h2 {
+    font-family:"Lemon Milk Medium"; 
+	margin: 2% 0;
+	font-size: 160%;
+	text-transform: uppercase;
+}
+
+.borde {
+	height: 1%;
+	width: 10%;
+	background: #EC3C3C;
+}
+
+.footer-items ul {
+    font-family: 'Muli', sans-serif;
+	list-style: none;
+	color: #fff;
+	font-size: 100%;
+	letter-spacing: 0.5px;
+}
+
+.footer-items ul a {
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	transition: 0.3s;
+}
+
+.footer-items ul a:hover {
+	color: #EC3C3C;
+    text-decoration: none;
+}
+
+.footer-items ul li {
+	margin: 4% 0;
+}
+
+.footer-items li i {
+	margin-right: 3%;
+}
+
+.dir{
+	font-size: 140%;
+}
+
+.social-media i {
+	margin: 2% .5%;
+	padding: 4%;
+    font-size: 25px;
+	border-radius: 50%;
+	transition: 0.3s;
+}
+
+.social-media .Face {
+    color: #375AD4;
+    border: 2px solid #375AD4;
+}
+
+.social-media .Face:hover {
+	background: #375AD4;
+    color: #fff;
+}
+.social-media .Ws {
+    color: #00CF6A;
+    border: 2px solid #00CF6A;
+}
+
+.social-media .Ws:hover {
+	background: #00CF6A;
+    color: #fff;
+}
+
+.footer-bottom{
+    background: #101010;
+}
+.copyright {
+    width: 90%;
+	margin: auto;
+	padding: 1.5% 4.5%;
+	color: #fff;
+    font-family: 'Muli', sans-serif;
+	font-size: 100%;
+}
+
+@media (max-width: 1085px) {
+	.footer-items {
+		width: 50%;
+	}
+}
+
+@media (max-width: 673px) {
+    .phone{
+        display: none;
+    }
+	.footer-items {
+		width: 100%;
+	}
+    .footer-items h2, .footer-items ul, .copyright {
+		font-size: 80%;
+	}
+    .social-media i {
+        padding: 2%;
+        font-size: 20px;
+    }
+    
+    .copyright {
+	    padding: 3% 4%;
+    }
+}
+
