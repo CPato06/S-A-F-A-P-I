@@ -1,10 +1,5 @@
 <?php
-// Establecer la conexión con la base de datos
-$servername = "database-api.cdjnyiihv9g0.us-east-2.rds.amazonaws.com";
-$username = "admin";
-$password = "Adminpato";
-$dbname = "mydb";
-$conn = new mysqli($servername, $username, $password, $dbname);
+include('conexion.php');
 
 // Verificar si la conexión fue exitosa
 if ($conn->connect_error) {
