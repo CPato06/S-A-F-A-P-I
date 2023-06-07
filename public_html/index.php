@@ -1,16 +1,4 @@
-<?php
-require_once('db.php');
-session_start();
 
-$db = new DB();
-$productos = $db->getProductosNuevos();
-$userId="";
-$carritoId = "";
-if(isset($_SESSION['id'])){
-  $userId = $_SESSION['id'];
-  $carritoId = $db->getCarrito($userId);
-}
-?>
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">

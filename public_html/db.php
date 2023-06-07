@@ -1,10 +1,10 @@
 <?php
 class DB {
 
-  public $server = "localhost";
-  public $user = "id19072847_root";
-  public $passwd = "60(~kf#!cO\FtE}G";
-  public $db = 'id19072847_funko_shop';
+  public $server = "database-api.cdjnyiihv9g0.us-east-2.rds.amazonaws.com";
+  public $user = "admin";
+  public $passwd = "Adminpato";
+  public $db = 'myf';
   public $connection;
 
   function __construct(){
