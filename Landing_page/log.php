@@ -32,7 +32,6 @@ if ($resultado->num_rows > 0) {
     echo "Usuario o contraseña incorrectos. Por favor, inténtalo nuevamente.";
 }
 
-// Cerrar la conexión con la base de datos
 $stmt->close();
 $conn->close();
 ?>
