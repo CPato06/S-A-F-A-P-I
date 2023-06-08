@@ -103,7 +103,7 @@
             <input class="controls" type="text" id="nombre_usu" name="nombre_usu" value="" placeholder="Nombre">
             <input class="controls" type="text" id="ap_paterno" name="ap_paterno" value="" placeholder="Apellido paterno">
             <input class="controls" type="text" id="ap_materno" name="ap_materno" value="" placeholder="Apellido materno">
-            <input class="buttons" type="submit" name="" value="Ingresar">
+            <input class="buttons" type="submit" name="" value="Registrar">
         </form>
         <h1 style="color:black; font-size: 15px; text-align: center; font-weight: lighter;">
             Al iniciar sesión estás aceptando las normas de nuestro servicio, así como políticas de seguridad.

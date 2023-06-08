@@ -15,10 +15,11 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     // Inicio de sesión exitoso
-    include_once 'main.php';
+    header("Location: main.php");
+    
 } else {
     // Inicio de sesión fallido
-    include_once 'login.php'
+    header("Location: login.php");
 }
 
 // Cerrar la conexión
