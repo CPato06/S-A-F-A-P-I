@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
+  <?php include('conexion.php'); ?>
   <head>
     <script src="assets/js/color-modes.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
